@@ -210,16 +210,15 @@ Media Queries
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center; /* doesn't do anything? */
   }
 
   .flex label {
-    flex-grow: 1;
+    min-width: 33%;
   }
 
   .flex input,
   .flex select {
-    flex-grow: 3;
+    flex-grow: 1;
   }
 
 
