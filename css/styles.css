@@ -71,8 +71,8 @@ form {
 }
 
 .separate {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   border-bottom: .1em solid black;
 }
 
@@ -157,7 +157,7 @@ input[type="number"] {
 }
 
 .block-label ~ .block-label {
-  margin-top: 1.5em; /* this is to separatethe checkbox section from the radio section */
+  margin-top: 1.5em; /* this is to separate the checkbox section from the radio section */
 }
 
 input[type="checkbox"],
@@ -203,23 +203,32 @@ Media Queries
 @media (min-width: 768px) {
 
   .container {
-    width: 60%;
+    width: 65%;
   }
 
   .flex {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 1.5em;
+  }
+
+  .flex:last-child {
+    margin-bottom: 0; /* we don't need margin botttom for the last flex div */
   }
 
   .flex label {
     min-width: 33%;
   }
 
-  .flex input,
-  .flex select {
-    flex-grow: 1;
+  input[type="number"] {
+    max-width: 25%;
   }
 
-
+  .flex input,
+  .flex label,
+  select {
+    margin-bottom: 0;
+  }
+  
 }
